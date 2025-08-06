@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "TextDiff",
+  "version": "1.0",
+  "description": "比较文本差异并高亮显示不同之处",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "TextDiff 文本差异对比工具 📝"
+  },
+  "permissions": ["storage", "clipboardRead"]
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TextDiff - 文本差异对比工具</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TextDiff 📝</h1>
+    <div class="description">
+      <p>TextDiff 是一个文本差异对比工具，可以帮助您快速识别两段文本之间的差异。绿色表示新增内容，红色表示删除内容。</p>
+    </div>
+    <div class="input-section">
+      <div class="text-area-container">
+        <h2>原始文本</h2>
+        <textarea id="original-text" placeholder="请输入原始文本..."></textarea>
+      </div>
+      <div class="text-area-container">
+        <h2>比较文本</h2>
+        <textarea id="compare-text" placeholder="请输入要比较的文本..."></textarea>
+      </div>
+    </div>
+    <div class="button-group">
+      <button id="compare-btn">比较差异</button>
+      <button id="clear-btn">清除</button>
+    </div>
+    <div class="result-section">
+      <h2>对比结果</h2>
+      <div id="diff-result"></div>
+    </div>
+  </div>
+  <script src="js/diff.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>
